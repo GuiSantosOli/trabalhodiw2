@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loja Virtual</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+
+    <div class="logo-container">
+      <img src="1.png" alt="Logo">
+    </div>
+  
+
+<nav class="menu-container">
+  <a href="#" class="menu-link">Home</a>
+
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="Buscar produtos">
+    <button id="search-button">Buscar</button>
+  </div>
+</nav>
+<br>
+
+    <div class="contact-info">
+      <p>Guilherme Santos Oliveira</p>
+      <p>Matricula: 1443963</p>
+    <p> Análise e Desenvolvimento de Sistemas</p>
+    </div>
+
+  </header>
+ 
+  <div class="menu">
+   
+  </div>
+
+
+  <div class="carousel-container">
+    <div id="product-list" class="carousel"></div>
+  </div>
+
+  <footer>
+    <p>Entre em contato:</p>
+    <p>Telefone: (31) 1234-5678</p>
+    <p>Email: contato@gs.com</p>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    const searchButton = document.getElementById('search-button');
+    const searchInput = document.getElementById('search-input');
+
+    searchButton.addEventListener('click', function() {
+      const searchTerm = searchInput.value.trim();
+      if (searchTerm !== '') {
+        window.location.href = 'resultado.html?search=' + searchTerm;
+      }
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
